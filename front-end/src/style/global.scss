@@ -1,0 +1,35 @@
+// // Setup
+@import "./setup/variables";
+@import "./setup/functions";
+// @import "setup/mixins.scss";
+@import "./setup/typography.scss";
+
+// // Basics
+@import "./basics/helpers";
+@import "./basics/layout";
+@import "./basics/base";
+@import "./basics/links";
+@import "./basics/buttons";
+
+// // Components
+// @import "components/main-header.scss";
+// @import "components/cat-card.scss";
+
+
+//pages 
+@import "./pages/home";
+@import "./pages/login";
+@import "./pages/event.details";
+@import "./pages/edit";
+@import "./pages/events";
+@import "./pages/user.detail";
+@import "./pages/signup";
+
+// component 
+@import "./cmps/event.preview";
+@import "./cmps/review";
+@import "./cmps/modal";
+// @import "./cmps/event.list";
+@import "./cmps/category.page";
+@import "./cmps/event.filter";
+

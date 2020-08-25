@@ -1,0 +1,121 @@
+.user-page {
+  position: absolute;
+
+  .top-bgc {
+    position: absolute;
+    width: 100%;
+    height: 350px;
+    background-color: #49beb67a;
+  }
+
+  .profile {
+    position: relative;
+    top: 100px;
+
+    .profile-top {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 50px;
+
+      .user-img {
+        width: 200px;
+        height: 200px;
+
+        img {
+          height: 100%;
+        }
+      }
+
+
+      .main-profile {
+        width: 70%;
+
+        .icons-desc-container {
+          margin-top: 30px;
+          display: flex;
+          flex-direction: column;
+          width: 80%;
+          justify-content: space-between;
+          height: 85%;
+        }
+
+        .icons {
+          margin-top: 1rem;
+          width: 250px;
+          display: flex;
+          justify-content: space-between;
+          margin: 0 0 3rem;
+
+          a {
+            color: #f34573;
+
+            &:hover {
+              color: var(--dark-color);
+            }
+          }
+        }
+      }
+    }
+
+
+
+    .profile-event {
+      display: flex;
+      flex-direction: column;
+
+      .attended-events {
+
+        .user-event-list {
+          margin: 30px auto 80px;
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(rem(200px), rem(220px)));
+          grid-auto-rows: auto;
+          gap: 40px;
+          padding-top: 30px;
+        }
+
+        .event {
+          position: relative;
+          width: 100%;
+          background-color: rgba(255, 255, 255, 0.425);
+          box-shadow: 0 1px 1px rgba(166, 166, 166, 0.5);
+          border-radius: 0 0 2px 2px;
+
+          .event-img-user-details {
+            height: 150px;
+            object-fit: cover;
+            display: block;
+            transition: filter 0.7s;
+            border-radius: 2PX 2PX 0 0;
+          }
+
+          .event-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: #f345732c;
+            height: 80px;
+            padding: 10px;
+            .event-title {
+              text-align: center;
+              color: #575757;
+            }
+
+            .event-desc {
+              color: gray;
+              text-overflow: ellipsis;
+              overflow: hidden;
+              white-space: nowrap;
+            }
+
+          }
+
+        }
+      }
+
+    }
+
+
+  }
+}

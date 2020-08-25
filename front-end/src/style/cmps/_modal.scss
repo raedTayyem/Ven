@@ -1,0 +1,111 @@
+.screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    transition: opacity .6s;
+    z-index: 6;
+
+    .modal {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 400px;
+        height: 175px;
+        background-color: white;
+        opacity: 0.8;
+       
+
+        .modal-details {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            font-size: rem(18px);
+
+            .event-title {
+                color:#49beb7;
+                font-size: rem(18px);
+                display: flex;
+                justify-content: center;
+                margin-bottom: rem(1px);
+                margin: 0 rem(5px);
+               
+            }
+            div {
+                display: flex;
+                justify-content: center;
+            }
+
+            .login-modal-btn {
+                display: flex;
+                justify-content: center;
+                align-self: center;
+                background-color: #49beb7;;
+                width: 25%;
+                border: none;
+                margin-bottom: rem(10px);
+
+                &.nav-bar{
+                    margin-top: rem(10px);
+                }
+                
+
+                a {
+                    color: white;
+                    display: inline-block;
+                    padding: rem(8px);
+                    width: 100%;
+                    height: 100%;
+
+                }
+            }
+
+            .signup {
+                display: flex;
+                justify-content: center;
+                margin-inline-end: rem(5px); 
+
+                p{
+                    margin-inline-end: rem(3px);
+                }
+
+                a {
+                    padding: 0;
+
+                    &:hover {
+                        text-decoration: underline;
+                        padding: 0;
+                    }
+                }
+                  
+            }
+        }
+
+        .links {
+
+            text-decoration: underline;
+            a:first-child {
+           margin-inline-end: rem(10px);
+
+            }
+        }
+
+    }
+
+    .close-modal-btn {
+        background-color: unset;
+        border: none;
+        float: right;
+        cursor: pointer;
+        padding: rem(10px) rem(15px);
+    }
+}
+
+
+

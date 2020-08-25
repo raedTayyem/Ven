@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: PT;
+    font-size: 1rem;
+    line-height: 1.6;
+    background: #ffffff;
+    color: #333;
+    letter-spacing: rem(0.3px);
+}
+
+a {
+    color: $primary-color;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+

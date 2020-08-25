@@ -1,0 +1,125 @@
+.event-preview {
+    position: relative;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.425);
+    box-shadow: 0 1px 1px rgba(166, 166, 166, 0.5);
+    border-radius: 0 0 2px 2px;
+    
+    .event-img {
+        height: 30vh;
+        object-fit: cover;
+        display: block;
+        transition: filter 0.7s;
+        border-radius: 2PX  2PX  0 0;
+    }
+
+    .userImg-preview {
+        position: absolute;
+        top: 0.7rem;
+        right: 0.3rem;
+    }
+
+    .attendees {
+        position: absolute;
+        font-weight: 300;
+        top: 24.5vh;
+        padding: 0 8px;
+        border-radius: 25px;
+        right: 0.3rem;
+        background-color: rgba(255, 255, 255, 0.836);
+
+        i {
+            margin-left: 8px;
+        }
+        p{
+            display: inline block;
+        }
+    }
+
+    .preview-like {
+        position: absolute;
+        width: 50px;
+        top: 24.5vh;
+        left: 0.3rem;
+        padding: 0 8px;
+        border-radius: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        font-size: rem(20px);
+        font-weight: bold;
+        background-color: rgba(255, 255, 255, 0.836);
+        svg {
+            width: 12px;
+            fill: #f34573;
+        }
+
+        p {
+            font-size: 12px;
+            margin-left: 8px;
+        }
+    }
+
+    .event-content {
+        line-height: 2;
+        font-size: 0.9em;
+        padding: 10px;
+        height: 100px;
+        // border-bottom: 1px solid #adadad;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+
+        // .event-content {
+        //     width: 100%;
+        //     display: flex;
+        //     justify-content: space-between;
+        //     height: 25px;
+
+
+        .event-price-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            h3 {
+                font-weight: 800;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                width: 130px;
+                white-space: nowrap;
+            }
+            
+            p {
+                display: inline;
+                margin-left: 5px;
+                font-size: 15px;
+            }
+        }
+
+        .event-time-place {
+            display: flex;
+            justify-content: space-between;
+            p{
+                text-overflow: ellipsis;
+                overflow: hidden;
+                width: 200px;
+                white-space: nowrap;
+            }
+            p:first-child{
+                font-size: 13px;
+                color: #adadad;
+            }
+            p:nth-child(2){
+                text-align: right;
+            }
+        }
+
+    }
+}
+
+
+
+// }

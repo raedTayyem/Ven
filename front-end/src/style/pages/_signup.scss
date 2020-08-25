@@ -1,0 +1,31 @@
+.signupForm {
+    margin: rem(100px) auto;
+    border: 1px rgba(211, 211, 211, 0.562) solid;
+    border-radius: 5px;
+    width: 40%;
+    padding: rem(30px);
+    text-align: center;
+    min-width: 400px;
+
+    input {
+        margin: rem(10px) 0;
+        padding: rem(10px);
+        width: 100%;
+        border-radius: 5px;
+        border: lightgray solid 1px;
+    }
+
+    button {
+        margin: rem(10px) 0;
+        padding: rem(10px);
+        width: 100%;
+        border-radius: 5px;
+        border: lightgray solid 1px;
+        outline: none;
+        cursor: pointer;
+        font-size: rem(20px);
+        &:hover {
+            background-color: rgb(226, 220, 220);
+        }
+    }
+}
