@@ -21,8 +21,7 @@ app.use(session({
 if (process.env.NODE_ENV === 'production') {
     
     app.use(express.static(path.resolve(__dirname, '../front-end')));
-    app.get('*', (req, res) => {
-        res.sendFile(path.join(__dirname + '/../front-end/src/app.js'))})
+   
 } else {
     const corsOptions = {
         origin: ['http://127.0.0.1:3000', 'http://localhost:3000'],
